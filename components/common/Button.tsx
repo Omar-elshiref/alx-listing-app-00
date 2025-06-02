@@ -1,17 +1,17 @@
 export interface ButtonProps {
-  children: React.ReactNode;
+  text: string;
   className?: string;
   onClick?: () => void;
 }
 
-export const Button = ({ children, className, onClick }: ButtonProps) => {
+export const Button = ({ text, className, onClick }: ButtonProps) => {
   return (
     <button
       type="button"
-      className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ${className}`}
+      className={`${className}`}
       onClick={onClick}
     >
-      {children}
+      {text}
     </button>
   );
 };

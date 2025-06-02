@@ -1,45 +1,73 @@
-# ALX Listing App
+# Project Description
+This project involves building a responsive property listing page using React, TypeScript, and Tailwind CSS. The application will display a collection of luxury properties with filtering capabilities, a hero section, and proper layout organization. The page will be fully responsive, adapting to different screen sizes while maintaining a clean, user-friendly interface.
 
-## About the Project
-The ALX Listing App project aims to scaffold and lay the foundational structure for a modern Airbnb clone. This initial milestone focuses on setting up a well-organized and scalable codebase using Next.js, TypeScript, TailwindCSS, and ESLint. By establishing a clean folder structure, reusable components, and adhering to best practices, the project ensures a solid starting point for building a dynamic, responsive, and user-friendly property listing page.
+# Learning Objectives
+By completing this project, you will:
 
-## Learning Objectives
-This milestone is designed for professional developers to strengthen their expertise in modern web application development. By completing this milestone, learners will:
+Implement responsive web design principles using Tailwind CSS
+Create reusable React components for layout (Header, Footer, Layout)
+Work with TypeScript interfaces for type safety
+Structure a Next.js application with proper component organization
+Render dynamic data from an array of objects
+Implement filtering functionality for property listings
+Practice best practices in component composition and styling
+Learn to break down UI mockups into logical components
 
-Gain hands-on experience scaffolding a Next.js project tailored for production readiness.
-Implement TypeScript for type safety and reusable interfaces to enhance code maintainability and robustness.
-Configure TailwindCSS for building responsive, accessible, and visually appealing UI components.
-Structure a Next.js project following industry-standard best practices, ensuring scalability and readability.
-Create foundational reusable components and organize assets effectively for real-world applications.
-Requirements
-To successfully complete this milestone, learners must meet the following prerequisites:
+# Requirements
+Technical Requirements
+Use Next.js as the React framework
+Implement TypeScript for type checking
+Style components exclusively with Tailwind CSS
+Create responsive layouts that work on mobile, tablet, and desktop
+Structure components in a logical folder hierarchy
+Use functional components with proper TypeScript typing
+Functional Requirements
+Layout Components
 
-Basic knowledge of Next.js, React, and TypeScript.
-Familiarity with TailwindCSS and modern styling techniques.
-Understanding of ESLint and its role in maintaining code quality.
-Proficiency in organizing and structuring projects for scalability.
-Technical Requirements:
+Header with navigation, logo, and search
+Footer with relevant links and information
+Layout wrapper for consistent page structure
+Home Page
 
-Next.js version 13+.
-Node.js version 16+ installed locally.
-Text editor (e.g., VS Code) with TypeScript and TailwindCSS extensions installed.
-Key Highlights
-Project Setup:
+Hero section with background image and call-to-action text
+Filter section with clickable filter pills
+Property listing grid displaying all properties from the sample data
+Responsive property cards showing key information
+Data Management
 
-Scaffold a Next.js application named alx-listing-app with TypeScript, ESLint, and TailwindCSS enabled.
-Configure TailwindCSS using a minimal and clean configuration (tailwind.config.js and globals.css).
-Folder Structure and Reusability:
+Properly typed property data interface
+Sample data array with complete property information
+Best Practices
+Component Organization
 
-Establish a clean folder structure, including directories for components/, interfaces/, constants/, and public/assets/.
-Create reusable components such as Card and Button for modularity and scalability.
-TypeScript Integration:
+Follow a consistent folder structure
+Separate layout components from page components
+Keep components small and focused
+Styling
 
-Define TypeScript interfaces (CardProps, ButtonProps, etc.) in interfaces/index.ts to ensure type safety and code consistency.
-Asset Management:
+Use Tailwind’s utility classes effectively
+Implement responsive design with mobile-first approach
+Maintain consistent spacing and typography
+TypeScript
 
-Organize assets, including images and SVGs, under public/assets/ for easy access and maintenance.
-From this Figma Mockup
-Documentation and Run Instructions:
+Define clear interfaces for all props
+Type all components and functions properly
+Use TypeScript to catch potential errors early
+Performance
 
-Create a comprehensive README.md file with details about the project, its goals, folder structure, and steps to run the project locally.
-Verify the project setup by running it locally and ensuring all configurations work seamlessly.
+Optimize images for web
+Implement proper loading states
+Consider lazy loading for non-critical components
+Accessibility
+
+Use semantic HTML
+Ensure proper contrast ratios
+Include alt text for images
+Make interactive elements keyboard-navigable
+Expected Outcomes
+A fully responsive property listing page
+Clean, maintainable code with proper TypeScript typing
+Reusable layout components
+Properly structured property data
+Functional filter components
+Visually appealing UI with consistent styling
