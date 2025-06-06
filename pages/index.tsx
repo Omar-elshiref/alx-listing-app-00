@@ -2,13 +2,12 @@ import Image from "next/image"
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-[350] rounded-2xl overflow-hidden flex items-center justify-center mb-8">
+    <section className="rounded-2xl overflow-hidden mb-8">
       <Image
         src="/assets/Image 1.png"
         alt="Beautiful landscape"
-        fill
-        className="object-cover"
-        priority
+        width={1920}
+        height={1080}
       />
     </section>
   )

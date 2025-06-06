@@ -1,6 +1,82 @@
-import { PropertyProps } from "@/interfaces";
+import { PropertyProps, PropertyType } from "@/interfaces";
 
 export const API_URL = "https://alx-listing-app.herokuapp.com/api";
+
+
+export const ACCOMMODATIONTYPES : PropertyType[] = [
+  {
+    type: "Roooms",
+    icon: "/assets/living-room 1.svg"
+  },
+  {
+    type: "Mansion",
+    icon: "/assets/mansion 1.svg"
+  },
+  {
+    type: "Countryside",
+    icon: "/assets/farm 1.svg"
+  },
+  {
+    type: "Villa",
+    icon: "/assets/villa 1.svg"
+  },
+  {
+    type: "Tropical",
+    icon: "/assets/palm-tree 1.svg"
+  },
+  {
+    type: "New",
+    icon: "/assets/key-chain 1.svg"
+  },
+  {
+    type: "Amazing pool",
+    icon: "/assets/swimming-pool 1.svg"
+  },
+  {
+    type: "Beach house",
+    icon: "/assets/vacations 1.svg"
+  },
+  {
+    type: "Island",
+    icon: "/assets/island (1) 1.svg"
+  },
+  {
+    type: "Camping",
+    icon: "/assets/tent 1.svg"
+  },
+  {
+    type: "Apartment",
+    icon: "/assets/apartment 1.svg"
+  },
+  {
+    type: "House",
+    icon: "/assets/home 1.svg"
+  },
+  {
+    type: "Lakefront",
+    icon: "/assets/cottage 1.svg"
+  },
+  {
+    type: "Farm house",
+    icon: "/assets/barn 1.svg"
+  },
+  {
+    type: "Treehouse",
+    icon: "/assets/treehouse (1) 1.svg"
+  },
+  {
+    type: "Cabins",
+    icon: "/assets/cabin 1.svg"
+  },
+  {
+    type: "Castles",
+    icon: "/assets/castle-tower 1.svg"
+  },
+  {
+    type: "Lokeside",
+    icon: "/assets/farm 1-1.svg"
+  }
+];
 
 
 export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
@@ -22,6 +98,9 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     image: "https://example.com/image1.jpg",
     discount: ""
   },
+
+
+
   {
     name: "Mountain Escape Chalet",
     address: {

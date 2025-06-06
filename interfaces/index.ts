@@ -22,3 +22,8 @@ export interface PropertyProps {
   image: string;
   discount?: string; // Optional, as not all properties may have a discount
 }
+
+export interface PropertyType {
+  type: string;
+  icon: string;
+}

@@ -2,14 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Button from "../common/Button";
 
-const accommodationTypes = [
-  "Rooms",
-  "Mansion",
-  "Countryside",
-//   "Apartments",
-//   "Villas",
-//   "Cabins",
-];
+import {ACCOMMODATIONTYPES} from "../../constants";
 
 const Header = () => {
   return (
@@ -29,7 +22,7 @@ const Header = () => {
         </div>
 
         {/* search bar mobile */}
-        <div className="flex items-center justify-between p-4 shadow-md sm:hidden gap-2">
+        <div className="flex items-center justify-between p-4 shadow-md gap-2 md:hidden">
             <div className="flex items-center justify-between bg-white rounded-full border border-gray-300 px-2.5 py-2 w-full ">
                 <div>
                     <h2 className="pl-3">Where to</h2>
@@ -62,7 +55,7 @@ const Header = () => {
         
         
          {/* Search Bar taplet */}
-        <div className="md:flex items-center justify-between p-5 shadow-md hidden lg:hidden gap-5">
+        <div className="md:flex items-center justify-between p-5 shadow-md gap-5 hidden xl-hidden 2xl:hidden">
             <Image src="/assets/logo.png" alt="logo" width={80} height={80} className="cursor-pointer"/>
             <div className="flex items-center justify-between bg-white rounded-full px-2.5 py-2 w-full shadow-md">
                     <div className="flex items-center justify-around w-full">
@@ -116,7 +109,7 @@ const Header = () => {
         </div>
 
          {/* Search Bar desktop */}
-        <div className="lg:flex items-center justify-between p-5 shadow-md hidden md:hidden">
+        <div className="2xl:flex items-center justify-between p-5 shadow-md hidden md:hidden lg:hidden ">
             <Image src="/assets/logo.png" alt="logo" width={80} height={80} className="cursor-pointer"/>
             <div className="flex items-center justify-between bg-white rounded-full px-2.5 py-2 shadow-md">
                     <div className="flex items-center justify-around w-full">
@@ -177,19 +170,16 @@ const Header = () => {
         </div>
 
 
-
-        
-      
-
         {/* Accommodation Types */}
-      <nav className="mt-4 border-t border-gray-100 pt-2">
-        <ul className="flex gap-6 list-none justify-center m-0 p-0">
-          {accommodationTypes.map((type) => (
+      <nav className="my-4 border-t border-gray-100 pt-2 pl-5 pr-2 w-full">
+        <ul className="flex gap-8 list-none justify-between items-center overflow-auto bar">
+          {ACCOMMODATIONTYPES.map((type) => (
             <li
-              key={type}
-              className="cursor-pointer font-medium text-gray-600 hover:text-blue-600 transition"
+              key={type.type}
+              className="cursor-pointer font-medium text-gray-600 hover:text-blue-600 transition flex items-center justify-center flex-col text-center"
             >
-              {type}
+              <Image src={type.icon} alt={type.type} width={25} height={25} />
+              <span className="text-[12px] whitespace-nowrap">{type.type}</span>
             </li>
           ))}
         </ul>
