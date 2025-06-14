@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import Button from "../common/Button";
 
-import {ACCOMMODATIONTYPES} from "../../constants";
 
 const Header = () => {
   return (
@@ -22,83 +21,87 @@ const Header = () => {
         </div>
 
         {/* search bar mobile */}
-        <div className="flex items-center justify-between p-4 shadow-md gap-2 md:hidden">
-            <div className="flex items-center justify-between bg-white rounded-full border border-gray-300 px-2.5 py-2 w-full ">
-                <div>
-                    <h2 className="pl-3">Where to</h2>
-                    <div className="flex items-center justify-around">
+        <div className="flex items-center justify-between p-4 shadow-md gap-1 md:hidden w-auto">
+            <div className="flex items-center justify-evenly gap-8 bg-white rounded-full border border-gray-300 px-2.5 py-2  shadow-md">
+                <div className="w-2/3">
+                    <h2 className="pl-3 pb-1 w-fit">Where to</h2>
+                    <div className="flex items-center gap-2 pl-3 width-[105%]">
                         <input
                             type="text"
+                            id="locationMobile"
                             placeholder="Location"
-                            className="px-3 py-2 rounded-full border-gray-300 text-sm w-20 outline-none border-0"
+                            className="rounded-full border-gray-300 text-sm w-[60%] outline-none border-0 "
                         />
                         <input
                             type="text"
+                            id="dataMobile"
                             placeholder="Data"
-                            className="px-3 py-2 rounded-full border-gray-300 text-sm w-20 outline-none border-0"
+                            className="rounded-full border-gray-300 text-sm w-1/3 outline-none border-0"
                         />
                         <input
                             type="text"
+                            id="guestMobile"
                             placeholder="Add Guests"
-                            className="px-1 py-2 rounded-full border-gray-300 text-sm w-20 outline-none border-0"
+                            className="rounded-full border-gray-300 text-sm w-[80%] outline-none border-0"
                         />
                     </div>
                 </div>
-            <div className="bg-[#FFA800] rounded-full w-14 h-14 flex items-center justify-center cursor-pointer">
-                <Image src="/assets/Magnifer.png" alt="Case Minimalistic" width={25} height={25} />
+            <div className="bg-[#FFA800] rounded-full w-12 h-12 flex items-center justify-center cursor-pointer">
+                <Image src="/assets/Magnifer.png" alt="Case Minimalistic" width={35} height={35} />
             </div>
             </div>
-            <div className="rounded-full w-17 h-17 flex items-center justify-center cursor-pointer ">
-                <Image src="/assets/profile 2.svg" alt="Case Minimalistic" width={100} height={100} className="rounded-full bg-[#34967C]" />
+            <div className="rounded-full w-12 h-12 flex items-center justify-center cursor-pointer">
+                <Image src="/assets/profile 2.svg" alt="profile2" width={50} height={50} className="rounded-full bg-[#34967C] flex-shrink-0" />
             </div>
         </div>
         
         
          {/* Search Bar taplet */}
-        <div className="md:flex items-center justify-between p-5 shadow-md gap-5 hidden xl-hidden 2xl:hidden">
-            <Image src="/assets/logo.png" alt="logo" width={80} height={80} className="cursor-pointer"/>
-            <div className="flex items-center justify-between bg-white rounded-full px-2.5 py-2 w-full shadow-md">
-                    <div className="flex items-center justify-around w-full">
-                       <div className="flex flex-col w-[40%] pl-5">
-                        <label htmlFor="location">Location</label>
+        <div className="hidden md:flex items-center justify-stretch p-5 shadow-md gap-5 xl:hidden">
+            <Image src="/assets/logo.png" alt="logo" width={100} height={100} className="cursor-pointer" style={{width: "auto", height: "auto"}}/>
+            <div className="flex items-center justify-between  bg-white rounded-full px-2.5 py-2 shadow-md w-[75%] gap-0">
+                    <div className="flex items-center justify-between w-full text-nowrap">
+                       <div className="flex flex-col w-[35%] pl-2">
+                        <label htmlFor="locationTaplet">Location</label>
                         <input
                             type="text"
-                            id="location"
+                            id="locationTaplet"
+
                             placeholder="Search for destination"
                             className="px-3 py-2 rounded-full border-gray-300 text-sm w-40 outline-none border-0 pl-0"
                         />
                        </div>
-                       <div className="flex flex-col w-[19%] border-l-2 border-gray-300 pl-5">
-                        <label htmlFor="Check in">Check in</label>
+                       <div className="flex flex-col w-[19%] border-l-2 border-gray-300 pl-2">
+                        <label htmlFor="CheckinTaplet">Check in</label>
                         <input
                             type="text"
-                            id="Check in"
+                            id="CheckinTaplet"
                             placeholder="Add date"
-                            className="px-3 py-2 rounded-full border-gray-300 text-sm w-40 outline-none border-0 pl-0"
+                            className="px-3 py-2 rounded-full border-gray-300 text-sm w-20 outline-none border-0 pl-0"
                         />
                        </div>
-                       <div className="flex flex-col w-[19%] border-l-2 border-gray-300 pl-5">
-                        <label htmlFor="Check out">Check out</label>
+                       <div className="flex flex-col w-[19%] border-l-2 border-gray-300 pl-2">
+                        <label htmlFor="CheckoutTaplet">Check out</label>
                         <input
                             type="text"
-                            id="Check out"
+                            id="CheckoutTaplet"
                             placeholder="Add date"
-                            className="px-3 py-2 rounded-full border-gray-300 text-sm w-40 outline-none border-0 pl-0"
+                            className="px-3 py-2 rounded-full border-gray-300 text-sm w-20 outline-none border-0 pl-0"
                         />
                        </div>
-                       <div className="flex flex-col w-[19%] border-l-2 border-gray-300 pl-5">
-                        <label htmlFor="People">People</label>
+                       <div className="flex flex-col w-[19%] border-l-2 border-gray-300 pl-2">
+                        <label htmlFor="PeopleTaplet">People</label>
                         <input
                             type="text"
-                            id="People"
+                            id="PeopleTaplet"
                             placeholder="Add guest"
-                            className="px-3 py-2 rounded-full border-gray-300 text-sm w-40 outline-none border-0 pl-0"
+                            className="px-3 py-2 rounded-full border-gray-300 text-sm w-20 outline-none border-0 pl-0"
                         />
                        </div>
                     </div>
                 
-            <div className="bg-[#FFA800] rounded-full w-14 h-14 flex items-center justify-center cursor-pointer">
-                <Image src="/assets/Magnifer.png" alt="Case Minimalistic" width={25} height={25} />
+            <div className="bg-[#FFA800] rounded-full w-14 h-14 flex items-center justify-center cursor-pointer flex-shrink-0">
+                <Image src="/assets/Magnifer.png" alt="Case Minimalistic" width={35} height={35} />
             </div>
             </div>
             
@@ -109,42 +112,42 @@ const Header = () => {
         </div>
 
          {/* Search Bar desktop */}
-        <div className="2xl:flex items-center justify-between p-5 shadow-md hidden md:hidden lg:hidden ">
-            <Image src="/assets/logo.png" alt="logo" width={80} height={80} className="cursor-pointer"/>
+        <div className="xl:flex items-center justify-between p-5 shadow-md hidden md:hidden">
+            <Image src="/assets/logo.png" alt="logo" width={100} height={100} className="cursor-pointer" style={{width: "auto", height: "auto"}}/>
             <div className="flex items-center justify-between bg-white rounded-full px-2.5 py-2 shadow-md">
                     <div className="flex items-center justify-around w-full">
                        <div className="flex flex-col w-[40%] pl-5">
-                        <label htmlFor="location">Location</label>
+                        <label htmlFor="locationDesktop">Location</label>
                         <input
                             type="text"
-                            id="location"
+                            id="locationDesktop"
                             placeholder="Search for destination"
                             className="px-3 py-2 rounded-full border-gray-300 text-sm w-40 outline-none border-0 pl-0"
                         />
                        </div>
                        <div className="flex flex-col w-[19%] border-l-2 border-gray-300 pl-5">
-                        <label htmlFor="Check in">Check in</label>
+                        <label htmlFor="CheckinDesktop">Check in</label>
                         <input
                             type="text"
-                            id="Check in"
+                            id="CheckinDesktop"
                             placeholder="Add date"
                             className="px-3 py-2 rounded-full border-gray-300 text-sm w-40 outline-none border-0 pl-0"
                         />
                        </div>
                        <div className="flex flex-col w-[19%] border-l-2 border-gray-300 pl-5">
-                        <label htmlFor="Check out">Check out</label>
+                        <label htmlFor="CheckoutDesktop">Check out</label>
                         <input
                             type="text"
-                            id="Check out"
+                            id="CheckoutDesktop"
                             placeholder="Add date"
                             className="px-3 py-2 rounded-full border-gray-300 text-sm w-40 outline-none border-0 pl-0"
                         />
                        </div>
                        <div className="flex flex-col w-[19%] border-l-2 border-gray-300 pl-5">
-                        <label htmlFor="People">People</label>
+                        <label htmlFor="PeopleDesktop">People</label>
                         <input
                             type="text"
-                            id="People"
+                            id="PeopleDesktop"
                             placeholder="Add guest"
                             className="px-3 py-2 rounded-full border-gray-300 text-sm w-40 outline-none border-0 pl-0"
                         />
@@ -152,7 +155,7 @@ const Header = () => {
                     </div>
                 
             <div className="bg-[#FFA800] rounded-full w-14 h-14 flex items-center justify-center cursor-pointer shrink-0">
-                <Image src="/assets/Magnifer.png" alt="Magnifer" width={25} height={25} />
+                <Image src="/assets/Magnifer.png" alt="Magnifer" width={35} height={35} />
             </div>
             </div>
             
@@ -170,20 +173,7 @@ const Header = () => {
         </div>
 
 
-        {/* Accommodation Types */}
-      <nav className="my-4 border-t border-gray-100 pt-2 pl-5 pr-2 w-full">
-        <ul className="flex gap-8 list-none justify-between items-center overflow-auto bar">
-          {ACCOMMODATIONTYPES.map((type) => (
-            <li
-              key={type.type}
-              className="cursor-pointer font-medium text-gray-600 hover:text-blue-600 transition flex items-center justify-center flex-col text-center"
-            >
-              <Image src={type.icon} alt={type.type} width={25} height={25} />
-              <span className="text-[12px] whitespace-nowrap">{type.type}</span>
-            </li>
-          ))}
-        </ul>
-      </nav>
+  
 
 
 

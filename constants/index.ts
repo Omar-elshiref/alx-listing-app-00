@@ -1,81 +1,90 @@
-import { PropertyProps, PropertyType } from "@/interfaces";
+import { PropertyProps } from "@/interfaces";
 
 export const API_URL = "https://alx-listing-app.herokuapp.com/api";
 
 
-export const ACCOMMODATIONTYPES : PropertyType[] = [
+export const ACCOMMODATIONTYPES  = [
   {
-    type: "Roooms",
+    name: "Roooms",
     icon: "/assets/living-room 1.svg"
   },
   {
-    type: "Mansion",
+    name: "Mansion",
     icon: "/assets/mansion 1.svg"
   },
   {
-    type: "Countryside",
+    name: "Countryside",
     icon: "/assets/farm 1.svg"
   },
   {
-    type: "Villa",
+    name: "Villa",
     icon: "/assets/villa 1.svg"
   },
   {
-    type: "Tropical",
+    name: "Tropical",
     icon: "/assets/palm-tree 1.svg"
   },
   {
-    type: "New",
+    name: "New",
     icon: "/assets/key-chain 1.svg"
   },
   {
-    type: "Amazing pool",
+    name: "Amazing pool",
     icon: "/assets/swimming-pool 1.svg"
   },
   {
-    type: "Beach house",
+    name: "Beach house",
     icon: "/assets/vacations 1.svg"
   },
   {
-    type: "Island",
+    name: "Island",
     icon: "/assets/island (1) 1.svg"
   },
   {
-    type: "Camping",
+    name: "Camping",
     icon: "/assets/tent 1.svg"
   },
   {
-    type: "Apartment",
+    name: "Apartment",
     icon: "/assets/apartment 1.svg"
   },
   {
-    type: "House",
+    name: "House",
     icon: "/assets/home 1.svg"
   },
   {
-    type: "Lakefront",
+    name: "Lakefront",
     icon: "/assets/cottage 1.svg"
   },
   {
-    type: "Farm house",
+    name: "Farm house",
     icon: "/assets/barn 1.svg"
   },
   {
-    type: "Treehouse",
+    name: "Treehouse",
     icon: "/assets/treehouse (1) 1.svg"
   },
   {
-    type: "Cabins",
+    name: "Cabins",
     icon: "/assets/cabin 1.svg"
   },
   {
-    type: "Castles",
+    name: "Castles",
     icon: "/assets/castle-tower 1.svg"
   },
   {
-    type: "Lokeside",
+    name: "Lokeside",
     icon: "/assets/farm 1-1.svg"
   }
+];
+
+ export const filters = [
+  "All",
+  "Top Villa" ,
+  "Free Reschedule",
+  "Book Now, Pay Later",
+  "Self Check-in",
+  "Instant Book"
 ];
 
 
@@ -89,13 +98,13 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
     },
     rating: 4.89,
     category: ["Luxury Villa", "Pool", "Free Parking"],
-    price: 3200,
+    price: 3101,
     offers: {
       bed: "3",
       shower: "3",
       occupants: "4-6"
     },
-    image: "https://example.com/image1.jpg",
+    image: "/assets/image 2.png",
     discount: ""
   },
 
@@ -116,7 +125,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "5-7"
     },
-    image: "https://example.com/image2.jpg",
+    image: "/assets/image 2.png",
     discount: "30"
   },
   {
@@ -134,7 +143,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-3"
     },
-    image: "https://example.com/image3.jpg",
+    image: "/assets/image 2.png",
     discount: ""
   },
   {
@@ -152,7 +161,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "2-4"
     },
-    image: "https://example.com/image4.jpg",
+    image: "/assets/image 2.png",
     discount: "15"
   },
   {
@@ -170,7 +179,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "4-6"
     },
-    image: "https://example.com/image5.jpg",
+    image: "/assets/image 2.png",
     discount: "20"
   },
   {
@@ -188,7 +197,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "8-10"
     },
-    image: "https://example.com/image6.jpg",
+    image: "/assets/image 2.png",
     discount: ""
   },
   {
@@ -206,7 +215,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image7.jpg",
+    image: "/assets/image 2.png",
     discount: "10"
   },
   {
@@ -224,7 +233,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "5-6"
     },
-    image: "https://example.com/image8.jpg",
+    image: "/assets/image 2.png",
     discount: "25"
   },
   {
@@ -242,7 +251,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-3"
     },
-    image: "https://example.com/image9.jpg",
+    image: "/assets/image 2.png",
     discount: ""
   },
   {
@@ -260,7 +269,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "5-7"
     },
-    image: "https://example.com/image10.jpg",
+    image: "/assets/image 2.png",
     discount: "40"
   },
   {
@@ -278,7 +287,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "6-8"
     },
-    image: "https://example.com/image11.jpg",
+    image: "/assets/image 2.png",
     discount: "50"
   },
   {
@@ -296,7 +305,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-6"
     },
-    image: "https://example.com/image12.jpg",
+    image: "/assets/image 2.png",
     discount: ""
   },
   {
@@ -314,7 +323,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "2-4"
     },
-    image: "https://example.com/image13.jpg",
+    image: "/assets/image 2.png",
     discount: "35"
   },
   {
@@ -332,7 +341,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2"
     },
-    image: "https://example.com/image14.jpg",
+    image: "/assets/image 2.png",
     discount: ""
   },
   {
@@ -350,7 +359,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "6-8"
     },
-    image: "https://example.com/image15.jpg",
+    image: "/assets/image 2.png",
     discount: "20"
   },
   {
@@ -368,7 +377,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-4"
     },
-    image: "https://example.com/image16.jpg",
+    image: "/assets/image 2.png",
     discount: "25"
   },
   {
@@ -386,7 +395,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "6-8"
     },
-    image: "https://example.com/image17.jpg",
+    image: "/assets/image 2.png",
     discount: "30"
   },
   {
@@ -404,7 +413,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image18.jpg",
+    image: "/assets/image 2.png",
     discount: ""
   },
   {
@@ -422,7 +431,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "5",
       occupants: "8-10"
     },
-    image: "https://example.com/image19.jpg",
+    image: "/assets/image 2.png",
     discount: "60"
   },
   {
@@ -440,7 +449,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image20.jpg",
+    image: "/assets/image 2.png",
     discount: ""
   }
 ];

@@ -1,5 +1,5 @@
 export type ButtonProps = {
-  children: React.ReactNode;
+  text?: string; // Optional, as some buttons may not have text
   className?: string;
   onClick?: () => void;
 };
@@ -24,6 +24,23 @@ export interface PropertyProps {
 }
 
 export interface PropertyType {
-  type: string;
+  name: string;
   icon: string;
+}
+
+export interface PillProps {
+  filters: string[];
+  activeFilter?: string;
+  onClick?: (filter: string) => void;
+  className?: string;
+}
+export interface ACCOMMODATIONProps {
+ ACCOMMODATIONTYPES: PropertyType[];
+  activeFilter?: string;
+  onClick?: (type: PropertyType) => void;
+  className?: string;
+}
+
+export interface FilterByCategory {
+  (PROPERTYLISTINGSAMPLE: PropertyProps[], selected: string): PropertyProps[];
 }

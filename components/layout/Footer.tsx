@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#232624] text-white font-sans">
+    <footer className="bg-[#232624] text-white font-sans border-t-20 border-[#34967c]">
       <div className="flex flex-wrap justify-between px-8 py-10 md:py-12 gap-y-8">
         {/* Logo & Description */}
         <div className="flex-1 min-w-[250px] mb-4">
